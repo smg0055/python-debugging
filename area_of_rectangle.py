@@ -36,7 +36,7 @@ def area_of_rectangle(height, width = None):
     return area
 
 if __name__ == '__main__':
-    if len(sys.argv) == 0:
+    if (len(sys.argv) == 0) or (len(sys.argv) > 2):
         message = (
                 "{script_name}: Expecting one or two command-line arguments:\n"
                 "\tthe height of a square or the height and width of a "
